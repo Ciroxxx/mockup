@@ -1,0 +1,196 @@
+@CHARSET "UTF-8";
+
+body{
+	text-align:center;
+	background: #829cc9;
+}
+.row {
+	max-width:100%;	
+}
+
+.columns{
+	padding-left:0;
+	padding-right:0;
+}
+
+dd,dt{
+	float:left;
+	text-align:left;
+}
+
+dt{
+	clear:left;
+	width:20rem;
+}
+
+hr{
+	max-width:62.5rem;
+	margin:1.25rem auto 1.1875rem;
+}
+
+#top-menu a{
+	/*padding: 0.5rem 2rem 0.5625rem 2rem;*/
+	margin-bottom:0;
+}
+
+#header, footer {
+	background-color:#5570b7;
+}
+
+#header .button{
+	background:none;
+}
+
+img#logoImg {
+  height: 4rem;
+  position: absolute;
+  top: 0;
+}
+
+footer ul.inline-list li{
+	float:none;
+	margin:0;
+}
+
+form label {
+  text-align: left;
+}
+/****************************** start home ******************************/
+
+div.heading div {
+  position: relative;
+  /*border: 1px solid;*/
+  background-color: #5570b7;
+  height: 4rem;
+  border-radius:1.7rem;
+  font-size: 2rem;
+  top: 3rem;
+  z-index: 1;
+  color:#ffffff;
+  box-shadow:#5570b7 0px 0px 26px 0px;
+}
+
+div#front img{
+	display: block;
+  	margin: 0 auto;
+  	padding: 1rem;
+  	background-color: aliceblue;
+}
+
+div.heading span{
+	line-height:4rem;
+}
+
+
+div.headed .large-6.left img{
+	border-radius:1rem 0 0 1rem;
+}
+
+div.headed .large-6.right img{
+	border-radius:0 1rem 1rem 0;
+}
+
+div.headed img{
+	width:100%;
+}
+
+div.headed span{
+	font-size:1.5rem;
+	color:#ffffff;	
+}
+
+div#extUsersHome:hover{
+	cursor:pointer;
+}
+
+div#extUsersHome .large-3{
+	margin-top: 2.5em;
+}
+
+div#extUsersHome p{
+	color:#999999;
+	margin-bottom: 0em;
+}
+
+div#extUsersHome img{
+	width:5em;
+	border-radius:50%;
+}
+
+div#extUsersHome > div:last-child{
+	margin-top:2em;
+}
+/****************************** end home ******************************/
+
+/****************************** start app ******************************/
+div#userMainApp-menu{
+	margin:1rem auto;
+}
+
+div#userMainApp-menu img{
+	width:4rem;
+}
+
+div#userApp div.userMainAppContent{
+	display:none;
+}
+
+div#userApp div.userMainAppContent:first-child{
+	display:block;
+}
+
+.main .row{
+	/* margin:0; */
+}
+
+.main .columns.ico {
+  	padding: 1rem;
+  	background:#008CBA;
+}
+
+.main .columns.ico ~.columns.ico {
+  	background:#FFFFFF;
+}
+
+div.main img{
+	width:4rem;
+}
+
+div.main img.avt{
+	width:8rem;	
+}
+
+div.main img#map{
+	width:100%;
+}
+
+div.miniContent{
+	text-align:left;
+	padding: 1rem;
+	background:#008CBA;
+}
+
+.main > div.miniContent ~ div.miniContent{
+	display:none;	
+}
+
+div#extUserMsgMiniTabContent img{
+	float:left;
+	margin: 0 1rem 0 0;
+}
+
+div#extUserMsgMiniTabContent span.msgUsername{
+	display:block;
+}
+
+div#extUserMsgMiniTabContent p.msg{
+	clear:both;
+}
+
+div.miniContent div.topay{
+	background-color:red;
+}
+
+div.miniContent div.paid{
+	background-color:green;
+}

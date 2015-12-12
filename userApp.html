@@ -1,0 +1,304 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Foundation Template | Orbit Home</title>
+<meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more."/>
+<meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
+<meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
+<link rel="stylesheet" href="./lib/foundation/css/foundation.css"/>
+<script src="./lib/foundation/js/vendor/modernizr.js"></script>
+<link rel="stylesheet" href="./css/main.css"/>
+</head>
+<body>
+	<script src="./js/header.js"></script>	
+
+	<div class="row" id="userMainApp-menu">
+		<div class="large-3 columns ico">
+			<img src="./images/usersAvatars/ferex_face_square.jpeg">
+		</div>
+		<div class="large-3 columns ico">
+			<img src="./images/ico/event.svg">
+		</div>
+		<div class="large-3 columns ico">
+			<img src="./images/ico/shopping18.svg">			
+		</div>
+		<div class="large-3 columns ico">
+			<img src="./images/ico/dollar.svg">
+		</div>		
+	</div>
+	
+	<div id="userApp">
+		<!-- profile -->
+		<div class="row userMainAppContent">
+			<!-- side bar -->
+			<div class="large-3 columns panel">
+				<ul>
+					<li>cambio password</li>
+					<li>info pagamento</li>
+				</ul>
+			</div>
+			
+			<!-- main profile content -->
+			<div class="large-9 columns main" >
+				<div class="row">
+					<div class="large-4 columns large-centered">
+						<img class="avt" src="./images/usersAvatars/ferex_face_square.jpeg">											
+					</div>
+				</div>
+				<div class="row">
+					<button>			
+						Cambia foto											
+					</button>
+				</div>		
+				<hr/>										
+				<form id="userProfile" method="post">
+					<div class="row">
+						<div class="large-6 columns">
+  							<label>Username
+    							<input type="text" value="Ferex" name="username"/>
+  							</label>
+  						</div>
+  						<div class="large-6 columns">
+  							<label>E-mail
+    							<input type="text" value="ff@it.it" name="email"/>
+  							</label>
+  						</div>
+					</div>
+					<div class="row">
+						<div class="large-6 columns">
+  							<label>Nome
+    							<input type="text" value="Ciro" name="name"/>
+  							</label>
+  						</div>
+  						<div class="large-6 columns">
+  							<label>Cognome
+    							<input type="text" value="Melatiro" name="surname"/>
+  							</label>
+  						</div>
+					</div>
+					<div class="row">
+						<div class="large-6 columns">
+      						<label>Sesso</label>
+					      	<input type="radio" name="sex" value="m" id="sexM"><label for="sexM">M</label>
+					      	<input type="radio" name="sex" value="f" id="sexF"><label for="sexF">F</label>
+					    </div>  						
+					</div>
+					<div class="row">
+						<div class="large-3 columns">
+      						<label>Data di nascita
+					      		<input type="date" name="bornDate" value="1976-11-06" min="1976-11-06" >
+					      	</label>
+					    </div>  						
+					</div>
+					<div class="row">
+						<div class="large-4 columns">
+      						<label>Telefono (senza international code)
+					      		<input type="tel" name="phone" value="" >
+					      	</label>
+					    </div>  						
+					</div>
+					<div class="row">
+						<div class="large-4 columns">
+  							<label>Città
+    							<input type="text" value="roma" name="city"/>
+  							</label>
+  						</div>
+  						<div class="large-4 columns">
+  							<label>Via, piazza
+    							<input type="text" value="Via Veneto" name="street"/>
+  							</label>
+  						</div>
+  						<div class="large-4 columns">
+  							<label>Civico
+    							<input type="number" value="98" name="streetNo"/>
+  							</label>
+  						</div>
+					</div>
+					<div class="row">
+						<div class="large-12 columns">
+  							<label>Descrizione
+    							<textarea rows="5"></textarea>
+  							</label>
+  						</div>
+  						
+					</div>
+					<div class="row">
+						<button>			
+							Invia											
+						</button>
+					</div>			
+				</form>
+			</div>
+		</div>
+		
+		<!-- requests -->
+		<div class="row userMainAppContent">
+			il contenuto del main tab 1
+		</div>
+		
+		<!-- interactions -->
+		<div class="row userMainAppContent">
+			<!-- side bar -->
+			<div class="large-3 columns panel">
+				<div>order by</div>
+				<ul>
+					<script>
+						var listNo = 7;
+					
+						for (var i = 1; i < listNo; i++){
+							if(i==1){
+								document.write('<li>'+
+										'<img src="./images/usersAvatars/stefano.jpg">'+
+										'<p>info 1</p>'+
+										'<p>info 2</p>'+
+									'</li>');
+							} else {
+								document.write('<li>'+
+										'<img src="./images/usersAvatars/foto_' + i +'.jpg">'+
+										'<p>info 1</p>'+
+										'<p>info 2</p>'+
+									'</li>');	
+							}	
+						}
+					</script>					
+				</ul>
+			</div>
+			
+			<!-- ********** quello che segue è la miniApp contenuta nella main App************ -->
+			<div class="large-9 columns main">
+				<!-- external user avatar -->
+				<div class="row">
+					<div class="large-4 columns large-centered">
+						<img class="avt" src="./images/usersAvatars/stefano.jpg">
+						<p>Stefano</p>
+						<p>2 km</p>
+					</div>
+				</div>
+				
+				<!-- mini app menu -->
+				<div class="row">
+					<div class="large-4 columns ico">
+						<img src="./images/ico/text70.svg">			
+					</div>
+					<div class="large-4 columns ico">
+						<img src="./images/ico/speech.svg">			
+					</div>
+					<div class="large-4 columns ico">
+						<img src="./images/ico/dollar.svg">			
+					</div>
+				</div>
+				
+				<!-- ext User Profile Content -->
+				<div class="row miniContent"> 
+					<div class="large-12 columns">					
+						<p class="panel">
+							Non mi piace picchiare i bambini, per questo lo faccio solo quando mi fanno arrabbiare.
+						</p>
+						<h4>Informazioni Generali</h4>
+						<dl>
+							<dt>Sesso:</dt>
+							<dd>Uomo</dd>
+							<dt>Età:</dt>
+							<dd>20</dd>
+							<dt>Ultimo login:</dt>
+							<dd>18 Novembre 2014</dd>
+							<dt>Madrelingua:</dt>
+							<dd>Italiano</dd>
+							<dt>Occupazione:</dt>
+							<dd>Italiano</dd>
+							<dt>Fuma:</dt>
+							<dd>No</dd>						
+						</dl>									
+					</div>
+					<div class="large-12 columns">
+						<img src="./images/map.png" id="map">
+					</div>	
+				</div>
+				
+				<!-- Msg Content -->
+				<div class="row miniContent" id="extUserMsgMiniTabContent"> 
+					<div class="large-12 columns">
+						<img src="./images/usersAvatars/ferex_face_square.jpeg">
+						<div>
+							<span class="msgUsername">Ferex</span>
+							<span class="msgDate">il 05/05/2015, 20:00</span>						
+						</div>
+						<p class="msg">eddai, non fare il prezioso?</p>
+					</div>
+					
+					<div class="large-12 columns">
+						<img src="./images/usersAvatars/stefano.jpg">
+						<div>
+							<span class="msgUsername">Stefano</span>
+							<span class="msgDate">il 05/05/2015, 19:15</span>
+						</div>
+						<p class="msg">No</p>
+					</div>
+					
+					<div class="large-12 columns">
+						<img src="./images/usersAvatars/ferex_face_square.jpeg">
+						<div>
+							<span class="msgUsername">Ferex</span>
+							<span class="msgDate">il 04/05/2015, 18:15</span>
+						</div>
+						<p class="msg">Ciao Stefano, vuoi fare il mio baby-sitter?</p>					
+					</div>
+					
+					<div class="large-12 columns">
+						<form>
+							<textarea rows="4" cols="50">			 
+							</textarea>							
+							<button>Invia</button>
+						</form>										
+					</div>
+				</div>
+				
+				<!-- Money Content -->
+				<div class="row miniContent" > 
+					<div class="large-12 columns topay">
+						<h4>da pagare</h4>					
+						<p>500 € del 02/02/2015</p>
+						<p>baby-sitter per 2 settimane a tempo pieno</p>
+					</div>
+					<div class="large-12 columns paid">
+						<h4>pagati</h4>					
+						<p>500 € del 15/01/2015</p>											
+						<p>baby-sitter per 2 settimane a tempo pieno</p>
+						<hr/>
+						<p>500 € del 15/01/2015</p>
+						<p>baby-sitter per 2 settimane a tempo pieno</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- money -->
+		<div class="row userMainAppContent">
+			il contenuto del main tab 3
+		</div>
+	</div>
+	
+	<!-- <script>
+	  document.write('<script src=./lib/foundation/js/vendor/' +
+	  ('__proto__' in {} ? 'zepto' : 'jquery') +
+	  '.js><\/script>')
+	  </script> -->
+	<script src="./lib/foundation/js/vendor/jquery.js"></script>
+	<script src="./lib/foundation/js/foundation.min.js"></script>
+	<script>
+	    $(document).foundation();
+	</script>
+	<!-- <script src="./lib/foundation/js/vendor/jquery.js"></script>
+	<script src="./lib/foundation/js/foundation/foundation.js"></script> -->
+	<script>
+	    $(document).foundation();
+	    var doc = document.documentElement;
+	    doc.setAttribute('data-useragent', navigator.userAgent);
+	</script>
+	<script src="./js/main.js"></script>
+	<script src="./js/footer.js"></script>
+</body>
+</html>
